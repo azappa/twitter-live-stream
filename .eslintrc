@@ -1,0 +1,13 @@
+{
+  "extends": "airbnb/base",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "presets": [
+    "es2015"
+  ],
+  "rules": {
+    "no-extend-native": [2, {"exceptions": ["Object"]}]
+  }
+}

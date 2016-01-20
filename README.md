@@ -14,5 +14,10 @@ export ACCESS_TOKEN_SECRET=xxx
 export PORT=xxx  
 export HASHTAG=xxx
 ```
-3. clone repo, `npm install`, `source .env`, `npm run dev` (make sure you got `nodemon` module installed globally! if not using `npm install -g nodemon`)
-4. open browser!
+3. make sure using node@5 (maybe @4 works too, didn't try...)
+4. clone repo, `npm install`, `source .env`, `npm run dev` (or `npm run start` for online site)
+5. open browser!
+
+
+######note######
+old version is still in `node-0.10` branch

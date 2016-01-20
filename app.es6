@@ -30,11 +30,12 @@ app
     extended: true,
   }))
   .use(methodOverride())
-  .use('/js', babelify(__dirname + '/s/js', {
+  .use('/js', babelify(__dirname + '/s/js/main.es6', {
     debug: false,
     cache: false,
     presets: ['es2015'],
-    /* , minify: true*/
+    // @TODO not-work => only: /\.es6$/,
+    minify: true,
   }))
   .use(express.static(path.join(__dirname, 's')))
   .use(errorHandler());
